@@ -1,8 +1,8 @@
 
 CREATE TABLE IF NOT EXISTS `Users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `First_name` varchar(20) NOT NULL,
-  `Last_name` varchar(20) NOT NULL,
+  `First Name` varchar(20) NOT NULL,
+  `Last Name` varchar(20) NOT NULL,
   `Email` varchar(10) NOT NULL,
   `Mobile Number` int(11) NOT NULL,
   `Country` varchar(100) NOT NULL,
