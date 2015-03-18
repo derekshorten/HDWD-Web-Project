@@ -1,7 +1,7 @@
 header{}
-nav{float:left}
-body{width: 90%}
-
+nav{float:left;border: 5px solid;height: 90%}
+body{width: 90%;background-color: #0099FF}
+form{float: bottom; background-color:#FF8533}
 column1of2{float: left; width: 620px; margin: 10px;}
 column2of2{float: left; width: 620px; margin: 10px;}
-footer{position:bottom}
+footer{float:bottom; background-color: #FF8533;}
