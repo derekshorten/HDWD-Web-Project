@@ -8,7 +8,9 @@ include ('Include\nav.php');
 ?>
 
 <body>
-<div class="column10f2">
+
+
+
 <form>
 <fieldset>
 <legend>
@@ -25,9 +27,9 @@ Login
 <input type ="submit" name="submit" value="SUBMIT"/>
 </fieldset>
 </form>
-<div class="column20f2">
+
 <form>
-<fieldset >
+<fieldset  >
 <legend>
 Signup
 </legend>
