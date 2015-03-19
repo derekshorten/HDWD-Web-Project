@@ -1,7 +1,8 @@
 
 <nav>
-Navigation
-<link href="index.php"type="index" />
+Navigation<br>
+<a href="localhost/HDWD-Web-Project/index.php">Home <a/>
+
 </nav>
 
 </html>

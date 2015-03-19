@@ -1,7 +1,7 @@
 header{background-color:#009900;border: 5px solid}
-nav{float:left;border: 5px solid;height: 90%;background-color:#009900}
+nav{float:left;border: 5px; height: 90%;background-color:#009900}
 body{width: 90%;background-color: #0099FF}
-form{float:left; background-color:#FF8533; width: 200px; margin: 10px}
+column1of2{float:left; background-color:#FF8533; width: 200px; height: 90%}
+column2of2{float:right; background-color:#FF8533; width: 200px;height: 90%}
 
-
-footer{float:bottom; background-color: #FF8533;}
+footer{position:flot-bottom; background-color: #FF8533; }
