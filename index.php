@@ -10,7 +10,7 @@ include ('Include\nav.php');
 <body>
 
 
-<column1of2>
+
 <form>
 <fieldset>
 <legend>
@@ -24,11 +24,10 @@ Login
 <p>  
 <input type="password" name ="password" size="20" maxlength ="10" />
 </P>
-<input type ="submit" name="submit" value="SUBMIT"/>
+<input type ="submit" name="login" value="LOGIN"/>
 </fieldset>
 </form>
-</column1of2>
-<column2of2>
+
 <form>
 <fieldset  >
 <legend>
@@ -44,7 +43,7 @@ Signup
 </P>
 <P>MOBILE NUMBER:</p>   
 <p>
-<input type="tel" name="usrtel">
+<input type="telephone" name="telephone">
 </P>
 <p>Country</P>
 <p>
@@ -64,7 +63,7 @@ Signup
 <input type ="submit" name="submit" value="SIGN UP"/>
 </fieldset>
 </form>
-</column2of2>
+
 </body>
 
 

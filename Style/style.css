@@ -1,7 +1,43 @@
-header{background-color:#009900;border: 5px solid}
-nav{float:left;border: 5px; height: 90%;background-color:#009900}
-body{width: 90%;background-color: #0099FF}
-column1of2{float:left; background-color:#FF8533; width: 200px; height: 90%}
-column2of2{float:right; background-color:#FF8533; width: 200px;height: 90%}
+header{
+	   background-color:#009900;
+	   border: 5px solid;
+	  }
 
-footer{position:flot-bottom; background-color: #FF8533; }
+nav{
+	float:left;
+	border: 5px; 
+	height: 90%;
+	background-color:#009900;
+   }
+   
+body{
+	 width: 90%;
+	 background-color: #0099FF;
+	}
+	
+form{
+	 float:left;
+	 margin:5px; 
+	 padding:5px;  
+	 width: 230px; 
+	 height: 90%; 
+	 overflow:auto; 
+	 border:1px solid;
+	}
+	
+	
+.clear{
+	   clear:left;
+	  }
+
+
+fieldset{
+       background-color: #efefef;
+	  }
+
+
+
+footer{
+	  float:bottom; 
+	  background-color: #FF8533; 
+	 }
