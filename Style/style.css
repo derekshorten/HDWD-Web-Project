@@ -1,6 +1,10 @@
+head{
+     
+    }
 header{
-	   background-color:#009900;
-	   border: 5px solid;
+	   background-color:#efefef;
+	   border: 5px ;
+	   
 	  }
 
 nav{
@@ -12,7 +16,9 @@ nav{
    
 body{
 	 width: 90%;
+	 height:90%;
 	 background-color: #0099FF;
+	 border:5px solid;
 	}
 	
 form{
@@ -25,17 +31,13 @@ form{
 	 border:1px solid;
 	}
 	
-	
 .clear{
-	   clear:left;
+	   clear:both;
 	  }
-
 
 fieldset{
        background-color: #efefef;
 	  }
-
-
 
 footer{
 	  float:bottom; 

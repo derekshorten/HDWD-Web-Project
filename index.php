@@ -1,3 +1,5 @@
+<?php
+?>
 <html>
 <head>Social Messenger - Index Page </head>
 <link href="Style/style.css"type="text/css"rel="stylesheet" />
@@ -64,7 +66,7 @@ Signup
 </fieldset>
 </form>
 
-</body>
+
 
 
 <?php
