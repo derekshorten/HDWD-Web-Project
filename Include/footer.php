@@ -2,7 +2,7 @@
 
 
 <footer>
-hi
+footer
 </footer>
 
 </html>
