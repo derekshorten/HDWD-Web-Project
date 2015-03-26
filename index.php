@@ -13,8 +13,8 @@ include ('Include\nav.php');
 
 
 
-<form>
-<fieldset>
+<form class="login">
+<fieldset class="login">
 <legend>
 Login
 </legend>
@@ -30,7 +30,7 @@ Login
 </fieldset>
 </form>
 
-<form>
+<form class="sign_up">
 <fieldset  >
 <legend>
 Signup
