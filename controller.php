@@ -1,14 +1,26 @@
 <?php
-$dbc =
-mysqli_connect('name' 'email' 'password' 'country' 'password');
-OR die(mysqli_connect_error() );
-mysqli_set_charset($dbc, 'utf-8');
+$name = "your_name";
+$email = "email";
+$mobile = "mobile_number";
+$country "country";
+$password = "password";
+$hostname = "localhost"; 
+
+
+
+
+$dbhandle = mysql_connect($hostname, $name, $email, $mobile, $country, $password)
+or die("Unable to connect to MySQL");
+echo "Connected to MySQL<br>";
 ?>
 
 <?php
-require('');
-if(mysqli_ping($dbc))
-{
-echo 'MYSQL Server',. mysqli_get_server_info($dbc);
-}
+
+<?php
+//select a database to work with
+$selected = mysql_select_db("messaging",$dbhandle)
+  or die("Could not select messaging");
+?>
+
+
 ?>

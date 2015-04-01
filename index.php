@@ -16,13 +16,13 @@ include ('Include\nav.php');
 <form class="login">
 <fieldset class="login">
 <legend>
-Login
+LOGIN
 </legend>
-<P>Email:</p>   
+<P>EMAIL:</p>   
 <p>
 <input type="text" name ="email" size="20" maxlength ="10" />
 </P>
-<P>Password: </p>   
+<P>PASSWORD: </p>   
 <p>  
 <input type="password" name ="password" size="20" maxlength ="10" />
 </P>
@@ -33,13 +33,17 @@ Login
 <form class="sign_up">
 <fieldset  >
 <legend>
-Signup
+SIGN UP
 </legend>
-<P>Name</p>   
+<P>FIRST NAME</p>   
 <p>
-<input type="Name" name ="Name" size="20" maxlength ="10" />
+<input type="Name" name ="First_Name" size="20" maxlength ="10" />
 </P>
-<P>Email:</p>   
+<P>LAST NAME</p>   
+<p>
+<input type="Name" name ="last_Name" size="20" maxlength ="10" />
+</P>
+<P>EMAIL:</p>   
 <p>
 <input type="text" name ="email" size="20" maxlength ="10" />
 </P>
@@ -47,18 +51,18 @@ Signup
 <p>
 <input type="telephone" name="telephone">
 </P>
-<p>Country</P>
+<p>COUNTRY</P>
 <p>
 
 <input name ="country" size="20" maxlength ="10" >
 
 </select>
 </P>
-<P>Password:</p>   
+<P>PASSWORD:</p>   
 <p>
 <input type="password" name ="password" size="20" maxlength ="10" />
 </P>
-<P>Conform Password:</p>   
+<P>CONFORM PASSWORD:</p>   
 <p>
 <input type="password" name ="password" size="20" maxlength ="10" />
 </P>
