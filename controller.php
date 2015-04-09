@@ -18,6 +18,6 @@ $hostname = "localhost";
 
 
 <?php
-require('xampp/htdocs/
-
+require('xampp/htdocs/);
+//
 ?>
