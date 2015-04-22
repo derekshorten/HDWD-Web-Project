@@ -27,6 +27,8 @@ LOGIN
 <input type="password" name ="password" size="20" maxlength ="10" />
 </P>
 <input type ="submit" name="login" value="LOGIN"/>
+
+
 </fieldset>
 </form>
 
@@ -74,5 +76,6 @@ SIGN UP
 
 
 <?php
+
 include ('Include\footer.php');
 ?>

@@ -51,7 +51,37 @@ form.sign_up{
 	   clear:both;
 	  }
 
-
+form.chat{
+		   
+		   float:left;
+	       text-align:left;
+           margin:5px; 
+           background-color: #efefef;
+	       padding:2%; 
+	       width: 41%;
+	       height: 85%;
+	       overflow:auto; 
+	       border:1px solid;
+	     }
+	  
+#photo-viewer {
+			   position: relative;
+			   height:300px;
+			   overflow: hidden;}
+#photo-viewer.is-loading:after {
+	content:url(Images/8550P.jpg);
+	position: absolute;
+	top:0;
+	right:0;}
+#photo-viewer img{
+position:absolute;
+max-width:100%;
+max-height:100%;
+top:50%;
+left:50%;
+}
+a.active{
+opacity0.3;}  
 footer{
 	  position:absolute;
 	  bottom:0px;

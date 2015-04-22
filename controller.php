@@ -22,7 +22,8 @@ require('xampp/htdocs/HDWD-Web-Project/Database/database.sql');
 if (mysqli_ping($dbc))
 {
 echo 'MySQL Server'. mysqli_get_server_info($dbc).
-					  'on'.mysqli_get_hostinfo($dbc_);
+					  'on'.mysqli_get_hostinfo($dbc);
+					 
 }
 //
 ?>
