@@ -2,7 +2,7 @@
 //Executing queries
 
 //1
-require('xampp/htdocs/HDWD-Web-Project/Database/connect_db.php');
+require('xampp/htdocs/HDWD-Web-Project/database/connect_db.php');
 
 //2
 $q = 'SHOW TABLES';

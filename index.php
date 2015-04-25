@@ -5,26 +5,28 @@
 <link href="Style/style.css"type="text/css"rel="stylesheet" />
 <?php
 
-include ('Include\header.php');
-include ('Include\nav.php');
+include ('include\header.php');
+include ('include\nav.php');
 ?>
 
 <body>
 
 
 
-<form class="login">
-<fieldset class="login">
+<form class="login" action="controller.php" method="post" />
+ <input type="hidden" name="action" value="login"/>
+
+<fieldset class="login" action="controller.php" method="post"/>
 <legend>
 LOGIN
 </legend>
 <P>EMAIL:</p>   
 <p>
-<input type="text" name ="email" size="20" maxlength ="10" />
+<input type="text" name ="email" size="20" maxlength ="20" />
 </P>
 <P>PASSWORD: </p>   
 <p>  
-<input type="password" name ="password" size="20" maxlength ="10" />
+<input type="password" name ="password" size="20" maxlength ="20" />
 </P>
 <input type ="submit" name="login" value="LOGIN"/>
 
@@ -32,22 +34,24 @@ LOGIN
 </fieldset>
 </form>
 
-<form class="sign_up">
-<fieldset  >
+<form class="sign_up"action="controller.php" method="post" >
+<input type="hidden" name="action" value="sign_up"/>
+
+<fieldset class="sign_up" action="controller.php" method="post"/>
 <legend>
 SIGN UP
 </legend>
 <P>FIRST NAME</p>   
 <p>
-<input type="Name" name ="First_Name" size="20" maxlength ="10" />
+<input type="Name" name ="First_Name" size="20" maxlength ="20" />
 </P>
 <P>LAST NAME</p>   
 <p>
-<input type="Name" name ="last_Name" size="20" maxlength ="10" />
+<input type="Name" name ="last_Name" size="20" maxlength ="20" />
 </P>
 <P>EMAIL:</p>   
 <p>
-<input type="text" name ="email" size="20" maxlength ="10" />
+<input type="text" name ="email" size="20" maxlength ="20" />
 </P>
 <P>MOBILE NUMBER:</p>   
 <p>
@@ -56,17 +60,17 @@ SIGN UP
 <p>COUNTRY</P>
 <p>
 
-<input name ="country" size="20" maxlength ="10" >
+<input name ="country" size="20" maxlength ="20" >
 
 </select>
 </P>
 <P>PASSWORD:</p>   
 <p>
-<input type="password" name ="password" size="20" maxlength ="10" />
+<input type="password" name ="password" size="20" maxlength ="20" />
 </P>
 <P>CONFORM PASSWORD:</p>   
 <p>
-<input type="password" name ="password" size="20" maxlength ="10" />
+<input type="password" name ="password" size="20" maxlength ="20" />
 </P>
 <input type ="submit" name="submit" value="SIGN UP"/>
 </fieldset>
@@ -77,5 +81,5 @@ SIGN UP
 
 <?php
 
-include ('Include\footer.php');
+include ('include\footer.php');
 ?>

@@ -3,13 +3,18 @@
 <link href="Style/style.css"type="text/css"rel="stylesheet" />
 <?php
 
-include ('Include\header.php');
-include ('Include\nav.php');
+include ('include\header.php');
+include ('include\nav.php');
 
 
 ?>
 
 <body>
+
+<?php
+session_start();
+var_dump($_SESSION);
+?>
 
 <table width ="400" cellpadding="10" cellspacing="5" border="2" bgcolor="#efefef">
 <tr>
@@ -22,8 +27,8 @@ include ('Include\nav.php');
 
 <?php
 
-include ('Database\query.php');
+include ('database\query.php');
 
-include ('Database\users.sql');
-include ('Include\footer.php');
+include ('database\users.sql');
+include ('include\footer.php');
 ?>

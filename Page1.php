@@ -16,8 +16,12 @@ include ('Include\nav.php');
 <form class="chat">
 <fieldset class="chat">
 
-<textarea name="chat" cols="20" rows="2"> </textarea>
-<input type ="SUBMIT" value="SEND"/>
+<chat type="secure" action="discuss">
+  <post>
+    <textarea type="chat"></textarea>
+  </post>
+  <input type="button" name="chat" value="Chat Now" />
+</chat>
 </fieldset>
 </form>
 
@@ -26,7 +30,8 @@ include ('Include\nav.php');
 ?>
 
 <?php
-
+//<script src="JAVASCRIPT FILES\dropzone.js"></script>
+//include ('JAVASCRIPT FILES\dropzone.js');
 include ('photo-viewer.html');
 ?>
 
