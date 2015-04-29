@@ -1,7 +1,9 @@
 <?php
 // input
 
-include("database/connect_db.php");
+require("database/connect_db.php");
+include("database/require.php");
+include("database/query.php");
 $first_name = $_POST['first_name'];
  $last_name = $_POST['last_name'];
  $email=$_POST['email'];
@@ -23,6 +25,8 @@ $sql = "INSERT INTO users
 }
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);	
+	
 
 }
+
    ?>

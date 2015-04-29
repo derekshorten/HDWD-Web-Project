@@ -5,13 +5,15 @@
 <?php
 
 include ('Include\header.php');
-include ('Include\nav.php');
+//include ('Include\nav.php');
 
 
 ?>
 
 <body>
-
+<form class="logout" action="index.php" method="post" />
+<input type ="submit" name="logout" value="LOGOUT"/>
+</form>
 
 <form class="chat">
 <fieldset class="chat">

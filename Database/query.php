@@ -2,7 +2,7 @@
 //Executing queries
 
 //1
-require('xampp/htdocs/HDWD-Web-Project/database/connect_db.php');
+require("database/connect_db.php");
 
 //2
 $q = 'SHOW TABLES';
@@ -18,4 +18,5 @@ else
 
 //5
 mysqli_close($dbc);
+
 ?>

@@ -6,12 +6,14 @@
 <?php
 
 include ('include\header.php');
-include ('include\nav.php');
+//include ('include\nav.php');
 ?>
 
 <body>
 
-
+<form class="logout" action="index.php" method="post" />
+<input type ="submit" name="logout" value="LOGOUT"/>
+</form>
 
 <form class="login" action="controller.php" method="post" />
  <input type="hidden" name="action" value="login"/>
