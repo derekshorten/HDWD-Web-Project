@@ -16,7 +16,7 @@ $first_name = $_POST['first_name'];
 $sql = "INSERT INTO users 
 						(first_name,last_name,email, mobile_number,country, password);
 		VALUES ('$first_name','$last_name','$email', 
-		        ,'$country', '$password')";
+		        '$country', '$password')";
 				
 			
 	$result = $conn->query($sql);
