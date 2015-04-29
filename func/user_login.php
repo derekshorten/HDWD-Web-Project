@@ -14,7 +14,7 @@ $result = $conn->query($sql);
 // act on the results
 // > no account found
 if ($result->num_rows == 0) {
-	header('Location: login.php');
+	header('Location: index.php');
 }
 
 // > login successful

@@ -20,9 +20,24 @@ $sql = "INSERT INTO users
 				
 			
 	$result = $conn->query($sql);
+		 if ($result->num_rows == 0) {
+	header('Location: usersdisplay.php');
+	
+		 }
+
+	else if ($result->num_rows == 1) {
+	$row = $result->fetch_assoc();
+	$_SESSION['userid'] = $row['id'];
+	header('Location: index.php');
+	
+
+}
+
 {
+	
 	header('Location: usersdisplay.php');
 }
+
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);	
 	
