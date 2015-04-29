@@ -15,15 +15,18 @@ include ('Include\header.php');
 <input type ="submit" name="logout" value="LOGOUT"/>
 </form>
 
-<form class="chat">
-<fieldset class="chat">
 
-<chat type="secure" action="discuss">
-  <post>
+
+<form class="chat"action="controller.php"  method ="post">
+<input type="hidden" name="action" value="chat"/>
+<fieldset class="chat" method = "post"  >
+
+
+
     <textarea type="chat"></textarea>
-  </post>
-  <input type="button" name="chat" value="Chat Now" />
-</chat>
+ 
+  <input type="button" name="chat" value="SEND"  method ="post" />
+
 </fieldset>
 </form>
 

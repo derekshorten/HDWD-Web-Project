@@ -11,6 +11,14 @@ include ('include\header.php');
 <form class="logout" action="index.php" method="post" />
 <input type ="submit" name="logout" value="LOGOUT"/>
 </form>
+
+
+<form action="func/search.php">
+<fieldset>
+<p>SERCH FOR USER:</P>
+<input type ="search" name="search"/>
+<input type ="submit" value="search"/>
+</fieldset>
 <?php
 
 

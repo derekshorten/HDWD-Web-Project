@@ -24,11 +24,11 @@ LOGIN
 </legend>
 <P>EMAIL:</p>   
 <p>
-<input type="text" name ="email" size="20" maxlength ="20" />
+<input type="text" name ="email" required ="required" size="20" maxlength ="20" />
 </P>
 <P>PASSWORD: </p>   
 <p>  
-<input type="password" name ="password" size="20" maxlength ="20" />
+<input type="password" name ="password" required ="required" size="20" maxlength ="20" />
 </P>
 <input type ="submit" name="login" value="LOGIN"/>
 
@@ -45,30 +45,30 @@ SIGN UP
 </legend>
 <P>FIRST NAME</p>   
 <p>
-<input type="name" name ="first_name" size="20" maxlength ="20" />
+<input type="name" name ="first_name"required ="required" size="20" maxlength ="20" />
 </P>
 <P>LAST NAME</p>   
 <p>
-<input type="name" name ="last_name" size="20" maxlength ="20" />
+<input type="name" name ="last_name"required ="required" size="20" maxlength ="20" />
 </P>
 <P>EMAIL:</p>   
 <p>
-<input type="text" name ="email" size="20" maxlength ="20" />
+<input type="text" name ="email"required ="required" size="20" maxlength ="20" />
 </P>
 <p>COUNTRY</P>
 <p>
 
-<input name ="country" size="20" maxlength ="20" >
+<input name ="country"required ="required" size="20" maxlength ="20" >
 
 </select>
 </P>
 <P>PASSWORD:</p>   
 <p>
-<input type="password" name ="password" size="20" maxlength ="20" />
+<input type="password" name ="password"required ="required" size="20" maxlength ="20" />
 </P>
 <P>CONFORM PASSWORD:</p>   
 <p>
-<input type="password" name ="password" size="20" maxlength ="20" />
+<input type="password" name ="password"required ="required" size="20" maxlength ="20" />
 </P>
 <input type ="submit" name="submit" value="SIGN UP"id="submitted"/>
 </fieldset>
