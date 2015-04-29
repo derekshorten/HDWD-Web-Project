@@ -12,20 +12,23 @@ include ('include\nav.php');
 <body>
 
 <?php
-if(isset($_POST['submitted'])){ 
-    
-    	echo $_POST["first_name"];
-        echo $_POST["last_name"];
-    	echo  $_POST["mobile_number"];
-    	echo  $_POST["email"];
-		echo  $_POST["country"];
-        
-	}
-
+session_start();
+var_dump($_SESSION);
 ?>
 
+<table width ="400" cellpadding="10" cellspacing="5" border="2" bgcolor="#efefef">
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Mobile</th>
+<th>Country</th>
 </body>
 
 <?php
+
+include ('database\query.php');
+
+include ('database\users.sql');
 include ('include\footer.php');
 ?>

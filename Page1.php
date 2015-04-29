@@ -12,19 +12,16 @@ include ('Include\nav.php');
 
 <body>
 
-<?php
-echo 'chat'
-?>
-
 
 <form class="chat">
 <fieldset class="chat">
 
-
-    <textarea type="message"></textarea>
-
- <button type="button" id="save">chat</button>
-
+<chat type="secure" action="discuss">
+  <post>
+    <textarea type="chat"></textarea>
+  </post>
+  <input type="button" name="chat" value="Chat Now" />
+</chat>
 </fieldset>
 </form>
 
