@@ -34,28 +34,24 @@ LOGIN
 </fieldset>
 </form>
 
-<form class="sign_up"action="controller.php" method="post" >
-<input type="hidden" name="action" value="sign_up"/>
+<form class="signup"action="controller.php" method="post" >
+<input type="hidden" name="action" value="signup"/>
 
-<fieldset class="sign_up" action="controller.php" method="post"/>
+<fieldset class="signup" action="controller.php" method="post"/>
 <legend>
 SIGN UP
 </legend>
 <P>FIRST NAME</p>   
 <p>
-<input type="Name" name ="First_Name" size="20" maxlength ="20" />
+<input type="name" name ="first_name" size="20" maxlength ="20" />
 </P>
 <P>LAST NAME</p>   
 <p>
-<input type="Name" name ="last_Name" size="20" maxlength ="20" />
+<input type="name" name ="last_name" size="20" maxlength ="20" />
 </P>
 <P>EMAIL:</p>   
 <p>
 <input type="text" name ="email" size="20" maxlength ="20" />
-</P>
-<P>MOBILE NUMBER:</p>   
-<p>
-<input type="telephone" name="telephone">
 </P>
 <p>COUNTRY</P>
 <p>
@@ -72,7 +68,7 @@ SIGN UP
 <p>
 <input type="password" name ="password" size="20" maxlength ="20" />
 </P>
-<input type ="submit" name="submit" value="SIGN UP"/>
+<input type ="submit" name="submit" value="SIGN UP"id="submitted"/>
 </fieldset>
 </form>
 

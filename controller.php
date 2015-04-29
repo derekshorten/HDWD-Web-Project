@@ -12,5 +12,5 @@ if ($action=="login") {
 }
 
 elseif ($action=="signup") {
-	include("func/user_signup.php");
+	include("func/signup.php");
 }
