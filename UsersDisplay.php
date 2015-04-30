@@ -13,10 +13,10 @@ include ('include\header.php');
 </form>
 
 
-<form action="func/search.php">
-<fieldset>
+<form class "search" action="func/search.php" >
+<fieldset class="search" method = "post"  >
 <p>SERCH FOR USER:</P>
-<input type ="search" name="search"/>
+<input type ="search" required ="required" name="search"/>
 <input type ="submit" value="search"/>
 </fieldset>
 <?php

@@ -90,3 +90,15 @@ footer{
 	 
 	  background-color: #FF8533; 
 	 }
+form.search{
+
+		   float:left;
+	       text-align:center;
+           margin:5px; 
+           background-color: #efefef;
+	       padding:2%; 
+	       width: 41%;
+	       height: 85%;
+	       overflow:auto; 
+	       border:1px solid;
+	     }
