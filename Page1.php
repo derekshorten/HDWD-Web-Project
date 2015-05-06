@@ -41,7 +41,7 @@ include ('Include\header.php');
 ?>
 
 <?php
-var Dropzone = require("dropzone");
+//var Dropzone = require("dropzone");
 require("javascript_files/dropzone");
 ?>
 <script src="./javascript_files/dropzone.js"></script>
