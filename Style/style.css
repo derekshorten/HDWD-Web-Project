@@ -52,18 +52,25 @@ form.sign_up{
 	  }
 
 form.chat{
-		   
+		
 		   float:left;
 	       text-align:left;
            margin:5px; 
            background-color: #efefef;
 	       padding:2%; 
-	       width: 41%;
+	       width: 31%;
 	       height: 85%;
 	       overflow:auto; 
 	       border:1px solid;
 	     }
-	  
+textarea{   
+		width:300px;
+		height: 40px;
+		}
+fieldset.chat{
+position: fixed;
+bottom: 40px;
+}
 #photo-viewer {
 			   position: relative;
 			   height:300px;
