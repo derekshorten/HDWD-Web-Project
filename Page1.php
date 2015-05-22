@@ -10,7 +10,11 @@ include ('Include\header.php');
 
 
 ?>
+ 
+ </head>
+ <body>
 
+ 
 <body>
 <form class="logout" action="index.php" method="post" />
 <input type ="submit" name="logout" value="LOGOUT"/>
@@ -23,14 +27,35 @@ include ('Include\header.php');
 
 
 
-    <textarea type="chat" id = "chat" rows ="5" cols="30"></textarea>
- <span id="chatcount" class="hide"></span>
- <script src ="javascript_files/utilities.js"></script>
- <script src ="javascript_files/chatarea-counter.js"></script>
+  <input type = "text"
+    id = "txtName" />
+	<input type = "button"
+    value = "send"
+    onclick = "sayHi()"/> 
  
-  <input type="button" name="chat" value="SEND"  method ="POST" />
+   <meta charset = "UTF-8">
+
+ <script type = "text/javascript">
+  // from textBoxes.html
+  function sayHi(){
+  var txtName = document.getElementById("txtName");
+  var txtOutput = document.getElementById("txtOutput");
+  var name = txtName.value;
+  txtOutput.value = " " + name + " "
+  } // end sayHi
+ </script>
+ 
 
 </fieldset>
+
+ <form action = "">
+ 
+ 
+ 
+  
+  <input type = "text"
+    id = "txtOutput" />
+
 </form>
 
 
