@@ -36,13 +36,13 @@ include ('Include\header.php');
    <meta charset = "UTF-8">
 
  <script type = "text/javascript">
-  // from textBoxes.html
+ 
   function sayHi(){
   var txtName = document.getElementById("txtName");
   var txtOutput = document.getElementById("txtOutput");
   var name = txtName.value;
   txtOutput.value = " " + name + " "
-  } // end sayHi
+  } 
  </script>
  
 
@@ -67,14 +67,46 @@ include ('Include\header.php');
 
 <?php
 //var Dropzone = require("dropzone");
-require("javascript_files/dropzone");
+//require("javascript_files/dropzone");
 ?>
-<script src="./javascript_files/dropzone.js"></script>
+<?php
+/*<script src="./javascript_files/dropzone.js"></script>
 
 <form action="/file-upload">
       class="dropzone"
       id="my-awesome-dropzone"></form>
-<input type="file" name="file" />
+<input type="file" name="file" />*/
+?>
+<main data-images="<?php echo count($images); ?>">
+
+	<h1>Uploading / Displaying Images</h1>
+	<form action="controller.php" enctype="multipart/form-data" method="post">
+		<label for="image-ip">Choose An Image</label>
+		<input id="image-ip" type="file" name="image"/>
+		<input type="submit" value="Upload"/>
+	</form>
+
+	<hr/>
+	<h3>Contents of directory: <?php echo __DIR__; ?>/images</h3>
+
+
+	<?php
+	
+	if (count($images)==0)
+		echo "<p>No images found</p>";
+	else {
+		echo '<p id="count">Image count: <span></span></p>';
+		echo '<ul>';
+		foreach ($images as $img) {
+			echo '<li>
+					<img src="'.$img.'"/>
+					<span>'.basename($img).'</span>
+					</li>';
+		}
+		echo '</ul>';
+	}
+	?>
+</main>
 </body>
 
 <?php
