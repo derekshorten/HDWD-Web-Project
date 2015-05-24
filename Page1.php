@@ -79,7 +79,7 @@ include ('Include\header.php');
 ?>
 <main data-images="<?php echo count($images); ?>">
 
-	<h1>Uploading / Displaying Images</h1>
+	<h1>Upload Images</h1>
 	<form action="controller.php" enctype="multipart/form-data" method="post">
 		<label for="image-ip">Choose An Image</label>
 		<input id="image-ip" type="file" name="image"/>
@@ -87,7 +87,7 @@ include ('Include\header.php');
 	</form>
 
 	<hr/>
-	<h3>Contents of directory: <?php echo __DIR__; ?>/images</h3>
+	<!---<h3>Contents of directory: <?php echo __DIR__; ?>/images</h3> --->
 
 
 	<?php
