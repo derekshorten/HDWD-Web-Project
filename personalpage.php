@@ -4,7 +4,7 @@
 <?php
 //include ('database\query.php');
 include ('include\header.php');
-include ('include\nav.php');
+//include ('include\nav.php');
 
 
 ?>
@@ -14,12 +14,9 @@ include ('include\nav.php');
 
 
 <form class "search" action="func/search.php" >
-<fieldset class="search" method = "post"    >
+<fieldset class="search" method = "post"  >
 <p>SERCH FOR USER:</P>
-<p>First Name</P>
-<input type ="search" required ="required" name="first_name"/>
-<p>Last Name</P>
-<input type ="search" required ="required" name="first_name"/>
+<input type ="search" required ="required" name="search"/>
 <input type ="submit" value="search"/>
 </fieldset>
 <?php
@@ -52,9 +49,10 @@ if ($result->num_rows > 0) {
     	echo '<td>'.$row["email"].'</td>';
     	echo '<td>'.$row["country"].'</td>';
     	echo   '<th><a href="page1.php"target="_parent"><button>chat</button></a></br></th>';
+		
         //echo '<td><a href="contact.php?delete='.$row["id"].'">Delete</a></td>';
        // echo '<td><a href="contact.php?id='.$row["id"].'">Update</a></td>';
-	  echo   '<th><a href=personalpage.php target="_parent"><button>Add To Favourites</button></a></br></th>';
+	
     	echo '</tr>';
     }
     echo '</tbody>';
