@@ -15,13 +15,15 @@ include ('include\nav.php');
 
 <form class "search" action="func/search.php" >
 <fieldset class="search" method = "post"    >
-<p>SERCH FOR USER:</P>
-<p>First Name</P>
-<input type ="search" required ="required" name="first_name"/>
-<p>Last Name</P>
-<input type ="search" required ="required" name="first_name"/>
+<p>SERCH FOR USER:
+First Name
+<input type ="search" required ="required" name="first_name">
+Last Name
+<input type ="search" required ="required" name="last_name">
 <input type ="submit" value="search"/>
 </fieldset>
+
+
 <?php
 
 
@@ -33,7 +35,8 @@ $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-	echo '<table border ="2" width = "400" cellpadding ="20" cellspacing= "10" bgcolor="#efefef">';
+	echo '<table border ="2" width = "400" height = "10" cellpadding ="5" cellspacing= "5" bgcolor="solid green" >';
+
     echo '<caption>users</caption>';
     echo '<thead>';
     echo '<tr>';
@@ -41,6 +44,7 @@ if ($result->num_rows > 0) {
     echo '<th>last_name</th>';
     echo '<th>email</th>';
     echo '<th>country</th>';
+	
 	
    // echo '<th>&nbsp;</th>';
     echo '</thead>';
@@ -54,7 +58,8 @@ if ($result->num_rows > 0) {
     	echo   '<th><a href="page1.php"target="_parent"><button>chat</button></a></br></th>';
         //echo '<td><a href="contact.php?delete='.$row["id"].'">Delete</a></td>';
        // echo '<td><a href="contact.php?id='.$row["id"].'">Update</a></td>';
-	  echo   '<th><a href=personalpage.php target="_parent"><button>Add To Favourites</button></a></br></th>';
+	  echo   '<th><a href=personalpage.php target="_parent" ><button>Favourites</button></a></br></th>';
+	  
     	echo '</tr>';
     }
     echo '</tbody>';
@@ -62,7 +67,9 @@ if ($result->num_rows > 0) {
 } else {
     echo "<h2>0 Results</h2>";
 }
+
 ?>
+
 <?php
 
 

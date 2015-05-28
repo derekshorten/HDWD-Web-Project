@@ -1,8 +1,10 @@
 <?php 
+
 	  if(isset($_POST['submit'])){ 
 	  if(isset($_GET['go'])){ 
 	  if(preg_match("/^[  a-zA-Z]+/", $_POST['name'])){ 
-	  $name=$_POST['name']; 
+	  $first_name=$_POST['first_name']; 
+	  $last_name=$_POST['last_name'];
 	  //connect  to the database 
 	  $db=mysql_connect  ("servername", "username",  "password") or die ('I cannot connect to the database  because: ' . mysql_error()); 
 	  //-select  the database to use 

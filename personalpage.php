@@ -1,5 +1,5 @@
 <html>
-<head>users will be displayed on this page</head>
+<head>personal page</head>
 <link href="Style/style.css"type="text/css"rel="stylesheet" />
 <?php
 //include ('database\query.php');
@@ -30,8 +30,8 @@ $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-	echo '<table border ="2" width = "400" cellpadding ="20" cellspacing= "10" bgcolor="#efefef">';
-    echo '<caption>users</caption>';
+	echo '<table border ="2" width = "400" height = "10" cellpadding ="5" cellspacing= "5" bgcolor="solid green" >';
+    echo '<caption> favourite users</caption>';
     echo '<thead>';
     echo '<tr>';
     echo '<th>first_name</th>';
