@@ -16,10 +16,9 @@ include ('include\nav.php');
 <form class "search" action="func/search.php" >
 <fieldset class="search" method = "post"    >
 <p>SERCH FOR USER:
-First Name
-<input type ="search" required ="required" name="first_name">
-Last Name
-<input type ="search" required ="required" name="last_name">
+Name
+<input type ="search" required ="required" name="name">
+
 <input type ="submit" value="search"/>
 </fieldset>
 
